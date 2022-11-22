@@ -32,7 +32,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
       - name: Deploy image
-        uses: AlexxNB/caprover-action@v1
+        uses: floms/action-caprover@v1
         with:
           host: '${{ secrets.CAPROVER_SERVER }}'
           password: '${{ secrets.CAPROVER_PASSWORD }}'
