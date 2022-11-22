@@ -32,7 +32,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
       - name: Deploy image
-        uses: dankore/github-to-caprover@v.1.0.6
+        uses: AlexxNB/caprover-action@v1
         with:
           host: '${{ secrets.CAPROVER_SERVER }}'
           password: '${{ secrets.CAPROVER_PASSWORD }}'
